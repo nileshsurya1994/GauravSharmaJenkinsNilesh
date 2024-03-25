@@ -27,17 +27,7 @@ pipeline {
                 echo 'Build'
             }
         }
-        stage('Continue???') {
-            input {
-                message "Should we continue?????"
-                ok 'yes???'
-            }
-            steps {
-                echo 'Deploy'
-                sh 'pwd'
-                sh 'echo "${name}"'
-            }
-        }
+        
         
         stage('Environmental variables') {
             steps {
