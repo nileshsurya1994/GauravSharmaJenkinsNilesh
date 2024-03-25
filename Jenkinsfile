@@ -17,9 +17,7 @@ pipeline {
                 sh 'echo "${pass}"'
                 sh 'echo "${person}"'
                 sh 'echo "${ADULT}"'
-                 sh 'echo "${PASSWORD}"'
-                  sh 'echo "${object}"'
-                  sh 'echo "${color}"'
+                 
             }
         }
         stage('Build') {
