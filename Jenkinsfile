@@ -28,6 +28,12 @@ pipeline {
                 
             }
         }
+        stage('Last STAge') {
+            steps {
+                echo 'Last STAge'
+                
+            }
+        }
         stage('Run Commands') {
             environment{
             pass = 'Ramraja'
