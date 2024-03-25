@@ -37,8 +37,6 @@ pipeline {
                 echo "Hare Ram"
                
                 sh '''
-                date
-                cal 2021
                 pwd
                 ls
                 '''
@@ -52,7 +50,7 @@ pipeline {
                 echo 'alway run no matter what.............'
             }
                  failure {
-                echo '.......failure......'
+                echo '.......failure is not good......'
                  }
                  success {
                 echo '.......success......'
