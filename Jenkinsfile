@@ -19,6 +19,12 @@ pipeline {
                 echo 'Build'
             }
         }
+
+        stage('Testing') {
+            steps {
+                echo 'Testing'
+            }
+        }
         
         
         stage('Environmental variables') {
