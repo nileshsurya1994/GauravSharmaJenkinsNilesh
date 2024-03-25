@@ -4,19 +4,13 @@ pipeline {
         environment{
             name = 'Ram'
         }
-        parameters{
-            string(name: 'person', defaultValue: 'Raja Ram', description: "lets gostring(name: 'person', defaultValue: 'Raja Ram', description: ")
-            booleanParam(name :'color', defaultValue: true, description: "booleanParam(name :'color', defaultValue: true, description")
-           choice(name: 'object', choices: ['red', 'hat', 'wine'], description: "choice(name: 'object', choices: ['red', 'hat', 'wine'], description")
-        }
+        
         
     stages {
         stage('Test') {
             steps {
                 echo 'Test World'
-                sh 'echo "${pass}"'
-                sh 'echo "${person}"'
-                sh 'echo "${ADULT}"'
+                
                  
             }
         }
@@ -41,7 +35,7 @@ pipeline {
         
             steps {
                 echo "Hare Ram"
-                sh 'echo "${pass}"'
+               
                 sh '''
                 date
                 cal 2021
